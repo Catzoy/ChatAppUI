@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return ThemeData(
       brightness: Brightness.light,
       colorScheme: scheme,
+      primarySwatch: scheme.primary,
       primaryColor: scheme.primary,
       backgroundColor: scheme.background,
       scaffoldBackgroundColor: scheme.primary,
