@@ -13,6 +13,7 @@ class ChatsView extends StatelessWidget {
     return ListsBackground(
       child: SafeArea(
         child: ListView.builder(
+          physics: BouncingScrollPhysics(),
           itemCount: Users.all.length,
           itemExtent: 100.0,
           padding: const EdgeInsets.only(right: 16.0),

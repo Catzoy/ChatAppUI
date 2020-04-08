@@ -24,6 +24,7 @@ class FavoritesView extends StatelessWidget {
   Widget get _favoritesList => ListView.builder(
         padding: EdgeInsets.only(left: 16.0),
         scrollDirection: Axis.horizontal,
+        physics: BouncingScrollPhysics(),
         itemCount: Users.favorites.length,
         itemBuilder: (_, index) {
           return _UserFavView(user: Users.favorites[index]);

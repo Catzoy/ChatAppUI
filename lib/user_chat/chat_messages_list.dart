@@ -9,6 +9,7 @@ class ChatMessagesList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       reverse: true,
+      physics: BouncingScrollPhysics(),
       itemCount: Messages.conversation.length,
       itemBuilder: (_, index) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
