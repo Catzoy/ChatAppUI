@@ -6,7 +6,10 @@ class ChatInputBar extends StatelessWidget {
     return SafeArea(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        margin: const EdgeInsets.symmetric(horizontal: 32.0),
+        margin: const EdgeInsets.symmetric(
+          horizontal: 32.0,
+          vertical: 8.0,
+        ),
         decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.secondary,
           borderRadius: BorderRadius.circular(20.0),
