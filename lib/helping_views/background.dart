@@ -21,27 +21,31 @@ class ListsBackground extends StatelessWidget {
         child: Stack(
           children: [
             child,
-            DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.white70,
-                    Colors.white54,
-                    Colors.white30,
-                    Colors.white.withOpacity(0.0),
-                  ],
-                ),
-              ),
-              child: SizedBox(
-                height: 50.0,
-                width: double.infinity,
-              ),
-            ),
+            _topWhiteShadow,
           ],
         ),
       ),
     );
   }
+
+  IgnorePointer get _topWhiteShadow => IgnorePointer(
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.white70,
+                Colors.white54,
+                Colors.white30,
+                Colors.white.withOpacity(0.0),
+              ],
+            ),
+          ),
+          child: SizedBox(
+            height: 50.0,
+            width: double.infinity,
+          ),
+        ),
+      );
 }
