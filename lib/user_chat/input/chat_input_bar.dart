@@ -9,6 +9,7 @@ class ChatInputBar extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 32.0),
         decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.secondary,
+          borderRadius: BorderRadius.circular(20.0),
         ),
         child: Row(
           children: [
@@ -17,7 +18,10 @@ class ChatInputBar extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: TextField(
-                  decoration: InputDecoration(hintText: "Type your message..."),
+                  decoration: InputDecoration(
+                    hintText: "Type your message...",
+                    border: InputBorder.none,
+                  ),
                 ),
               ),
             ),
